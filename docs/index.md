@@ -29,8 +29,16 @@ Meduza is an open-source project. Any contributions are more than welcome. If yo
 - Our [contribution guidelines](contributing.md).
 - The [issues](https://github.com/ksel172/Meduza/issues) on our GitHub repository.
 
+## License and Liability
 
-**For more information**: 
- - [Meduza GitHub repository](https://github.com/ksel172/Meduza).
- - Contact me at: [@KSeliadtsou](https://x.com/KSeliadtsou) or konstantinseliadtsou@gmail.com.
+This project is licensed under the [BSD-3-Clause license](https://opensource.org/license/bsd-3-clause)
+
+**Disclaimer:** This tool is provided for educational purposes only. The contributors of this project assume no liability for any direct or indirect use, misuse, or consequences arising from its usage. Users are solely responsible for complying with all applicable laws and regulations.
+
+
+
+## More information and contact
+- **GitHub repo:** [Meduza GitHub repository](https://github.com/ksel172/Meduza).
+- **GitHub organization:** [Meduza Framework](https://github.com/Meduza-Framework).
+- **Contact me at:** [@KSeliadtsou](https://x.com/KSeliadtsou) or konstantinseliadtsou@gmail.com.
 ---

@@ -2,7 +2,18 @@ site_name: Meduza Documentation
 
 nav:
     - Home: index.md
-
+    - Getting Started:
+        - Installation: installation.md
+        - Configuration: configuration.md
+        - Usage: usage.md
+    - Architecture: architecture.md
+    - API:
+        - Listener API: listener-api.md
+        - Agent API: agent-api.md
+        - Client API: client-api.md
+    - Development:
+        - Listener Development: listener-development.md
+        - Agent Development: agent-development.md
 theme:
     favicon: 'img/favicon.ico'
     logo: 'img/logo.png'
