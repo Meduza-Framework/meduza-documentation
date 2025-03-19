@@ -1,0 +1,26 @@
+site_name: Meduza Documentation
+
+nav:
+    - Home: index.md
+
+theme:
+    favicon: 'img/favicon.ico'
+    logo: 'img/logo.png'
+    name: material
+    palette:
+        - media: "(prefers-color-scheme: light)"
+          primary: 'black'
+          accent: 'white'
+          toggle:
+            icon: material/brightness-3
+            name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: 'black'
+          accent: 'white'
+          toggle:
+            icon: material/brightness-7
+            name: Switch to light mode
+
+extra:
+    favicon: 'img/favicon.ico'
