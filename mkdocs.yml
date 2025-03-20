@@ -3,8 +3,8 @@ site_name: Meduza Documentation
 nav:
     - Home: index.md
     - Getting Started:
-        - Installation: installation.md
-        - Configuration: configuration.md
+        - Installation and Configuration: installation-and-config.md
+        - Environment: environment.md
         - Usage: usage.md
     - Architecture: architecture.md
     - API:
@@ -14,10 +14,17 @@ nav:
     - Development:
         - Listener Development: listener-development.md
         - Agent Development: agent-development.md
+    
 theme:
     favicon: 'img/favicon.ico'
     logo: 'img/logo.png'
     name: material
+    features:
+        - content.code.annotate
+        - content.code.copy
+    icon:
+        copy: fontawesome/regular/copy
+        check: fontawesome/regular/check
     palette:
         - media: "(prefers-color-scheme: light)"
           primary: 'black'
@@ -33,5 +40,12 @@ theme:
             icon: material/brightness-7
             name: Switch to light mode
 
-extra:
-    favicon: 'img/favicon.ico'
+markdown_extensions:
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.tilde
+  - pymdownx.highlight
