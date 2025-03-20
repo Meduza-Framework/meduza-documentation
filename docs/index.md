@@ -20,9 +20,8 @@ To get started with Meduza, follow these steps:
 
 ## Getting Started
 
-1. **Installation:** To install Meduza on your system: [installation guide](installation.md).
-2. **Configuration:** To configure Meduza: [configuration guide](configuration.md).
-3. **Usage:** For an in-depth dive on the usage of Meduza: [usage guide](usage.md).
+1. **Installation and configuration:** To install Meduza on your system: [installation guide](installation-and-config.md).
+2. **Usage:** For an in-depth dive on the usage of Meduza: [usage guide](usage.md).
 
 ## Contributing
 Meduza is an open-source project. Any contributions are more than welcome. If you would like to contribute please check out the following:
