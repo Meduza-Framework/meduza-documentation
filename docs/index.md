@@ -26,6 +26,7 @@ To get started with Meduza, follow these steps:
 
 ## Contributing
 Meduza is an open-source project. Any contributions are more than welcome. If you would like to contribute please check out the following:
+
 - Our [contribution guidelines](contributing.md).
 - The [issues](https://github.com/ksel172/Meduza/issues) on our GitHub repository.
 
