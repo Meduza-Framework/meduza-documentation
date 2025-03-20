@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../installation/">
+        <link rel="prev" href="../installation-and-config/">
       
       
         <link rel="next" href="../usage/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Configuration - Meduza Documentation</title>
+        <title>Environment - Meduza Documentation</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#environment" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration
+              Environment
             
           </span>
         </div>
@@ -279,11 +284,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../installation-and-config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Installation
+    Installation and Configuration
     
   </span>
   
@@ -307,17 +312,137 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Environment
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Configuration
+    Environment
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Values
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teamserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teamserver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listeners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listeners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postgres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postgres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pgadmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pgadmin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jupyter notebook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refresh-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refresh tokens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssltls-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSL/TLS Certificates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -587,6 +712,103 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Values
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teamserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teamserver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listeners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listeners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postgres" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postgres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pgadmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pgadmin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jupyter notebook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refresh-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refresh tokens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssltls-certificates" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSL/TLS Certificates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -602,9 +824,120 @@
 
 
 
-  <h1>Configuration</h1>
+<h1 id="environment">Environment</h1>
+<div class="highlight"><pre><span></span><code># teamserver conf
+TEAMSERVER_HOSTNAME=teamserver
+TEAMSERVER_PORT=8080
 
+# Possible values: dev || debug
+TEAMSERVER_MODE=dev
 
+# golang debug
+DLV_PORT=2345
+
+# listener exposed port range
+LISTENER_PORT_RANGE_START=8000
+LISTENER_PORT_RANGE_END=8010
+
+# postgres
+POSTGRES_HOST=meduza-db
+POSTGRES_PORT=5432
+POSTGRES_NAME=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_USER=postgres
+POSTGRES_DB=meduza-db
+POSTGRES_SCHEMA=meduza_schema
+
+# redis
+REDIS_HOST=meduza-redis
+REDIS_PORT=6379
+REDIS_PASSWORD=redis
+
+# pgadmin
+PGADMIN_DEFAULT_EMAIL=admin@meduza.dev
+PGADMIN_DEFAULT_PASSWORD=10tacles
+
+# jupyter
+JUPYTER_HOST=meduza-jupyter
+JUPYTER_PORT=8888
+JUPYTER_TOKEN=meduza
+JUPYTER_USE_VOLUME=true
+JUPYTER_BIND_LOCALHOST_ONLY=true
+
+# jwt secret
+JWT_SECRET=Cvha9XEuPLiadZT71i8gC0k9b7+pRCYzYvuM0z3+VFEt+1ZCIrocor5Irj/OTDEnDQ04TYgWY3HZbItrfiN9lQ==
+
+# refresh token cookie 
+COOKIE_PATH=/
+
+COOKIE_DOMAIN=localhost 
+
+REFRESH_SECURE=false
+
+REFRESH_HTTP=true
+
+MODULE_UPLOAD_PATH=./teamserver/modules
+
+# cert
+CERT_UPLOAD_PATH=./teamserver/certs
+</code></pre></div>
+<h2 id="values">Values</h2>
+<p>The <code>.env</code> file consists from:</p>
+<h3 id="teamserver">Teamserver</h3>
+<ul>
+<li><code>TEAMSERVER_HOSTNAME</code> - Sets the hostname for the teamserver to start on.</li>
+<li><code>TEAMSERVER_PORT</code> - Sets the port for the teamserver to bind to.</li>
+<li><code>TEAMSERVER_MODE</code> - Sets the running mode for the server between <code>dev</code> and <code>debug</code>. In case you're using the <code>TEAMSERVER_MODE=debug</code>, configure <code>DLV_PORT</code> env var and set up the Delve debugger client. <a href="https://github.com/go-delve/delve/blob/master/Documentation/EditorIntegration.md">Available Delve clients</a>.</li>
+<li><code>DLV_PORT</code> - Sets the delve remote debugging port for debugging the teamserver.</li>
+</ul>
+<h3 id="listeners">Listeners</h3>
+<ul>
+<li><code>LISTENER_PORT_RANGE_START</code> - Sets the start of the range for ports, that listeners can bind to.</li>
+<li><code>LISTENER_PORT_RANGE_END</code> - Sets the end of the range for ports, that listeners can bind to.</li>
+</ul>
+<h3 id="postgres">Postgres</h3>
+<ul>
+<li><code>POSTGRES_HOST</code> - Set the PostgreSQL hostname.</li>
+<li><code>POSTGRES_PORT</code> - Sets the PostgreSQL port.</li>
+<li><code>POSTGRES_NAME</code> - Sets the PostgreSQL server name.</li>
+<li><code>POSTGRES_PASSWORD</code> - Sets the password for the PostgreSQL server.</li>
+<li><code>POSTGRES_USER</code> - Sets the PosgreSQL user name.</li>
+<li><code>POSTGRES_DB</code> - Sets the PostgreSQL DB name.</li>
+<li><code>POSTGRES_SCHEMA</code> - Sets the default PostgreSQL schema name.</li>
+</ul>
+<h3 id="redis">Redis</h3>
+<ul>
+<li><code>REDIS_HOST</code> - Sets the hostname for the Redis server.</li>
+<li><code>REDIS_PORT</code> - Sets the port for the Redis server.</li>
+<li><code>REDIS_PASSWORD</code> - Sets the password for the Redis server.</li>
+</ul>
+<h3 id="pgadmin">Pgadmin</h3>
+<ul>
+<li><code>PGADMIN_DEFAULT_EMAIL</code> - Sets the default email for the pgadmin 4 management server.</li>
+<li><code>PGADMIN_DEFAULT_PASSWORD</code> - Sets the default password for the pgadmin 4 management server.</li>
+</ul>
+<h3 id="jupyter-notebook">Jupyter notebook</h3>
+<ul>
+<li><code>JUPYTER_HOST</code> - Sets the jupyter notebook host.</li>
+<li><code>JUPYTER_PORT</code> - Sets the jupyter notebook port.</li>
+<li><code>JUPYTER_TOKEN</code> - Sets the jupyter notebook token (auth token).</li>
+<li><code>JUPYTER_USE_VOLUME</code> - Enable/Disable the optional volume, that mounts the home directory (work directory) of the jupyter notebook user.</li>
+<li><code>JUPYTER_BIND_LOCALHOST_ONLY</code> - Enable/Disable optional value to force jupyter notebook to be accessible only from localhost.</li>
+</ul>
+<h3 id="refresh-tokens">Refresh tokens</h3>
+<ul>
+<li><code>JWT_SECRET</code> - JWT secret for client authentication. You can generate one with the following command: <code>openssl rand -base64 64</code>.</li>
+<li><code>COOKIE_PATH</code> - Sets where the cookie is valid.</li>
+<li><code>COOKIE_DOMAIN</code> - Specifies which domain the cookie belongs to.</li>
+<li><code>COOKIE_DOMAIN</code> - Sets the cookie domain.</li>
+<li><code>REFRESH_SECURE</code> - Enable/Disable mandatory HTTPS for cookies.</li>
+<li><code>REFRESH_HTTP</code> - Enable/Disable HTTP-Only cookies.</li>
+<li><code>MODULE_UPLOAD_PATH</code> - Sets the path where modules are uploaded. If not set, the server will default to <code>./teamserver/modules</code>.</li>
+</ul>
+<h3 id="ssltls-certificates">SSL/TLS Certificates</h3>
+<ul>
+<li><code>CERT_UPLOAD_PATH</code> - Sets the default path where certificates are uploaded. If not set, the server will default to <code>./teamserver/certs</code>.</li>
+</ul>
 
 
 
@@ -651,7 +984,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
