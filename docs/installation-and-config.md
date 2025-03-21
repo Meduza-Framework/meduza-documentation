@@ -21,3 +21,17 @@ After creating the `.env` file, run the docker compose file using the following 
 docker compose --env-file .env up --force-recreate --build
 ```
 
+
+> NOTE:
+> This section is still WIP due to plans to potentially containerize the client. Also, clients are ran using a dev version currently. An installation guide must be added if the client is moved out to a different repository.
+
+after starting the teamserver, launch the client application using:
+```
+npm run dev
+```
+
+## Configuration
+
+> NEED SOME IMAGES OF THE UI HERE
+
+Log into the client using the default credentials: ``Meduza:Meduza``. After doing so, it is highly suggested you go to the settings and configure some new users, as well as change the admin user by configuring a new user with admin access and removing the default one.
