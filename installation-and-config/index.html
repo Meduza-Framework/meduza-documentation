@@ -349,6 +349,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -670,6 +679,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -700,6 +718,18 @@ cd Meduza/teamserver
 <p>After creating the <code>.env</code> file, run the docker compose file using the following command (Replace the .env file with the name of the file you created):</p>
 <div class="highlight"><pre><span></span><code>docker compose --env-file .env up --force-recreate --build
 </code></pre></div>
+<blockquote>
+<p>NOTE:
+This section is still WIP due to plans to potentially containerize the client. Also, clients are ran using a dev version currently. An installation guide must be added if the client is moved out to a different repository.</p>
+</blockquote>
+<p>after starting the teamserver, launch the client application using:
+<div class="highlight"><pre><span></span><code>npm run dev
+</code></pre></div></p>
+<h2 id="configuration">Configuration</h2>
+<blockquote>
+<p>NEED SOME IMAGES OF THE UI HERE</p>
+</blockquote>
+<p>Log into the client using the default credentials: <code>Meduza:Meduza</code>. After doing so, it is highly suggested you go to the settings and configure some new users, as well as change the admin user by configuring a new user with admin access and removing the default one.</p>
 
 
 
