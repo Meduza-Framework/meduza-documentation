@@ -14,6 +14,7 @@ nav:
     - Development:
         - Listener Development: listener-development.md
         - Agent Development: agent-development.md
+    - Change Log: change-log.md
     
 theme:
     favicon: 'img/favicon.ico'
