@@ -44,6 +44,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -764,7 +766,11 @@
 <h2 id="version-04"><strong>Version 0.4</strong></h2>
 <p>New Features and Functionality:</p>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Big</strong> changes to the listener system, featuring a new way of loading external listeners and a revamped service for built-in listeners (HTTP/S, TCP, SMB).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Big</strong> changes to the listener system, featuring a new way of loading external listeners and a revamped service for built-in listeners (HTTP/S, TCP, SMB).<ul>
+<li>Moved the listener system to the listener service folder at <code>teamserver/internal/services/listener</code> including built-in listeners.</li>
+<li>Changed the way listeners are handled (removed tight coupling).</li>
+</ul>
+</li>
 <li class="task-list-item"><input type="checkbox" disabled/> <strong>Big</strong> changes to the payload system. Payloads can be loaded no matter the codebase (No longer limited to dotnet only).</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Made module system specific only to agents with module loading support.</li>
 <li>Help command logic with dynamic loading of commands if modules are installed.</li>
@@ -799,22 +805,67 @@
 <p>New Features and Functionality:</p>
 <ul>
 <li>Migrated persistent storage functionality from Redis to use PostgreSQL only.</li>
-<li>Listener start/stop functionality implementation.</li>
-<li>Basic unit testing to the server component.</li>
-<li>Basic client functionality.</li>
-<li>XOR Encryption/Decryption util.</li>
+<li>Listener start/stop functionality implementation.<ul>
+<li>Added <code>service.go</code> for listener lifecycle management.</li>
+</ul>
+</li>
+<li>Basic unit testing to the server component.<ul>
+<li>Handler unit tests in <code>/tests/handlers</code>.</li>
+<li>Mocks for unit tests in <code>/tests/mocks</code>.</li>
+</ul>
+</li>
+<li>Basic client functionality.<ul>
+<li>Login page, sidebar and custom components.</li>
+</ul>
+</li>
+<li>Revamped XOR Encryption/Decryption util.</li>
+<li>Custom logger for the server at <code>/teamserver/pkg/logger</code>.</li>
 </ul>
 <h2 id="version-01-mvp"><strong>Version 0.1 (MVP)</strong></h2>
 <p>New Features and Functionality:</p>
 <ul>
-<li>Docker compose to run containerized parts of the server.</li>
-<li>Basic Agent Service system.</li>
-<li>Basic GO-based utilities.</li>
-<li>Database implementation using PostgreSQL</li>
-<li>Client authentication and client related services.</li>
-<li>Basic listener implementation (models only).</li>
-<li>Redis for cache and persistent storage.</li>
+<li>Docker compose and initialization scripts to run containerized parts of the server.</li>
+<li>Basic Agent Service system.<ul>
+<li>Agent management API endpoints at <code>/api/v1/agents</code></li>
+<li><code>agent_handler.go</code> for listener side and client side agent changes.</li>
+<li>SQL queries for <code>agents</code>, <code>agent_config</code>, <code>agent_info</code> and <code>agent_task</code> table creation.</li>
+<li>DAL for agent DB operations.</li>
 </ul>
+</li>
+<li>Basic GO-based utilities.<ul>
+<li><code>env.go</code>, <code>strings.go</code>, <code>xor.go</code></li>
+</ul>
+</li>
+<li>Pgadmin4 for database management.<ul>
+<li>Docker container running pgadmin4.</li>
+<li>Environment variables for pgadmin4 startup.</li>
+</ul>
+</li>
+<li>Database implementation using PostgreSQL<ul>
+<li>Docker container running PostgreSQL.</li>
+<li>Environment variables for PostgreSQL startup.</li>
+</ul>
+</li>
+<li>Client authentication and client related services.<ul>
+<li>JWT based client authentication.</li>
+<li>API endpoints and middleware for client authentication.</li>
+</ul>
+</li>
+<li>Basic listener implementation (models only).<ul>
+<li>Listener models in <code>teamserver/models/listener.go</code></li>
+<li>SQL query for <code>listeners</code> table creation.</li>
+<li>DAL for listener DB operations.</li>
+<li><code>listener_handler.go</code> for listener management.</li>
+</ul>
+</li>
+<li>Redis for cache and persistent storage.<ul>
+<li>Docker container running redis.</li>
+<li>Environment variables for redis startup.</li>
+</ul>
+</li>
+<li>Live reloading using <code>Air</code>.</li>
+</ul>
+<hr />
 
 
 
