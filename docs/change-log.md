@@ -7,6 +7,8 @@
 New Features and Functionality:
 
 - [ ] **Big** changes to the listener system, featuring a new way of loading external listeners and a revamped service for built-in listeners (HTTP/S, TCP, SMB).
+       - Moved the listener system to the listener service folder at `teamserver/internal/services/listener` including built-in listeners.
+       - Changed the way listeners are handled (removed tight coupling).
 - [ ] **Big** changes to the payload system. Payloads can be loaded no matter the codebase (No longer limited to dotnet only).
 - [ ] Made module system specific only to agents with module loading support.
 - Help command logic with dynamic loading of commands if modules are installed.
@@ -46,19 +48,44 @@ New Features and Functionality:
 
 - Migrated persistent storage functionality from Redis to use PostgreSQL only.
 - Listener start/stop functionality implementation.
+       - Added `service.go` for listener lifecycle management.
 - Basic unit testing to the server component.
+       - Handler unit tests in `/tests/handlers`.
+       - Mocks for unit tests in `/tests/mocks`.
 - Basic client functionality.
-- XOR Encryption/Decryption util.
+       - Login page, sidebar and custom components.
+- Revamped XOR Encryption/Decryption util.
+- Custom logger for the server at `/teamserver/pkg/logger`.
 
 
 ## **Version 0.1 (MVP)**
 
 New Features and Functionality:
 
-   - Docker compose to run containerized parts of the server.
+   - Docker compose and initialization scripts to run containerized parts of the server.
    - Basic Agent Service system.
+       - Agent management API endpoints at `/api/v1/agents`
+       - `agent_handler.go` for listener side and client side agent changes.
+       - SQL queries for `agents`, `agent_config`, `agent_info` and `agent_task` table creation.
+       - DAL for agent DB operations.
    - Basic GO-based utilities.
+       - `env.go`, `strings.go`, `xor.go`
+   - Pgadmin4 for database management.
+       - Docker container running pgadmin4.
+       - Environment variables for pgadmin4 startup.
    - Database implementation using PostgreSQL
+       - Docker container running PostgreSQL.
+       - Environment variables for PostgreSQL startup.
    - Client authentication and client related services.
+       - JWT based client authentication.
+       - API endpoints and middleware for client authentication.
    - Basic listener implementation (models only).
+       - Listener models in `teamserver/models/listener.go`
+       - SQL query for `listeners` table creation.
+       - DAL for listener DB operations.
+       - `listener_handler.go` for listener management.
    - Redis for cache and persistent storage.
+       - Docker container running redis.
+       - Environment variables for redis startup.
+   - Live reloading using `Air`.
+---

@@ -37,7 +37,7 @@ This project is licensed under the [BSD-3-Clause license](https://opensource.org
 
 
 
-## More information and contact
+## More information and contacts
 - **GitHub repo:** [Meduza GitHub repository](https://github.com/ksel172/Meduza).
 - **GitHub organization:** [Meduza Framework](https://github.com/Meduza-Framework).
 - **Contact me at:** [@KSeliadtsou](https://x.com/KSeliadtsou) or konstantinseliadtsou@gmail.com.
