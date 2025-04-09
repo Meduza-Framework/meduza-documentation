@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../usage/">
+        <link rel="prev" href="../agent-development/">
       
-      
-        <link rel="next" href="../listener-api/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Architecture - Meduza Documentation</title>
+        <title>Change Log - Meduza Documentation</title>
       
     
     
@@ -71,6 +69,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#change-log" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Architecture
+              Change Log
             
           </span>
         </div>
@@ -356,17 +359,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -377,7 +373,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -591,10 +586,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../change-log/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Change Log
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -605,6 +622,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-02-mvp-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.2 (MVP Expansion)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-01-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.1 (MVP)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -626,6 +699,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-02-mvp-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.2 (MVP Expansion)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-01-mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version 0.1 (MVP)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -641,9 +760,60 @@
 
 
 
-  <h1>Architecture</h1>
-
-
+<h1 id="change-log">Change Log</h1>
+<h2 id="version-04"><strong>Version 0.4</strong></h2>
+<p>New Features and Functionality:</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Big</strong> changes to the listener system, featuring a new system for external listeners and a revamped service for built-in listeners (HTTP/S, TCP, SMB).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Big</strong> changes to the payload system. Payloads can be loaded no matter the codebase (No longer limited to dotnet only).</li>
+<li>Help command logic with dynamic loading of commands if modules are installed.</li>
+<li>Jupyter notebook implementation for scripting.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Module dependency loading follow load order (only C# agent).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Database migration system.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> New payload compilation types (DLL and Shellcode).</li>
+<li>Improved teams functionality</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Other module types for the C# Agent (Command, Persistence, Info, etc.).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> More functionality for the client.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> SSL/TLS certificate handling and loading.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Improved C# Agent functionality (persistence, AV bypass and other important features).</li>
+</ul>
+<h2 id="version-03"><strong>Version 0.3</strong></h2>
+<p>New Features and Functionality:</p>
+<ul>
+<li>Agent authentication and check-in using the new check-in handler.</li>
+<li>Expanded API functionality (new endpoints for module, payload and agent management).</li>
+<li>Diffie-Hellman key exchange to establish a shared 32 byte key for bidirectional AES-256 encrypted communication using Galois/Counter Mode (GCM) for message integrity.</li>
+<li>Module loading for C# agents.</li>
+<li>Dependency loading during runtime for C# modules.</li>
+<li>DAL logging and error handling improvements.</li>
+<li>Improved unit testing for server components.</li>
+<li>Listener AutoStart functionality.</li>
+<li>Payload service for configuration and compilation of the C# agent.</li>
+<li>Functional listener login pages.</li>
+<li>Improved client authentication.</li>
+<li>"multiplayer" functionality.</li>
+<li>Restructured and cleaned up code structure.</li>
+</ul>
+<h2 id="version-02-mvp-expansion"><strong>Version 0.2 (MVP Expansion)</strong></h2>
+<p>New Features and Functionality:</p>
+<ul>
+<li>Migrated persistent storage functionality from Redis to use PostgreSQL only.</li>
+<li>Listener start/stop functionality implementation.</li>
+<li>Basic unit testing to the server component.</li>
+<li>Basic client functionality.</li>
+<li>XOR Encryption/Decryption util.</li>
+</ul>
+<h2 id="version-01-mvp"><strong>Version 0.1 (MVP)</strong></h2>
+<p>New Features and Functionality:</p>
+<ul>
+<li>Docker compose to run containerized parts of the server.</li>
+<li>Basic Agent Service system.</li>
+<li>Basic GO-based utilities.</li>
+<li>Database implementation using PostgreSQL</li>
+<li>Client authentication and client related services.</li>
+<li>Basic listener implementation (models only).</li>
+<li>Redis for cache and persistent storage.</li>
+</ul>
 
 
 
