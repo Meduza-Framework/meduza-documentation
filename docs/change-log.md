@@ -6,8 +6,9 @@
 
 New Features and Functionality:
 
-- [ ] **Big** changes to the listener system, featuring a new system for external listeners and a revamped service for built-in listeners (HTTP/S, TCP, SMB).
+- [ ] **Big** changes to the listener system, featuring a new way of loading external listeners and a revamped service for built-in listeners (HTTP/S, TCP, SMB).
 - [ ] **Big** changes to the payload system. Payloads can be loaded no matter the codebase (No longer limited to dotnet only).
+- [ ] Made module system specific only to agents with module loading support.
 - Help command logic with dynamic loading of commands if modules are installed.
 - Jupyter notebook implementation for scripting.
 - [ ] Module dependency loading follow load order (only C# agent).
