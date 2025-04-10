@@ -10,16 +10,22 @@ New Features and Functionality:
        - Moved the listener system to the listener service folder at `teamserver/internal/services/listener` including built-in listeners.
        - Changed the way listeners are handled (removed tight coupling).
 - [ ] **Big** changes to the payload system. Payloads can be loaded no matter the codebase (No longer limited to dotnet only).
+       - Modular agent loading no matter the codebase.
+       - Dynamic compilation parameter loading for the front-end.
+       - Dynamic payload compilation based on payload codebase.
 - [ ] Made module system specific only to agents with module loading support.
 - Help command logic with dynamic loading of commands if modules are installed.
 - Jupyter notebook implementation for scripting.
-- [ ] Module dependency loading follow load order (only C# agent).
+       - Docker container running Jupyter notebook.
+       - Environment variables for Jupyter notebook startup.
+- [ ] Module dependency loading following load order (only C# agent).
 - [ ] Database migration system.
 - [ ] New payload compilation types (DLL and Shellcode).
 - Improved teams functionality
 - [ ] Other module types for the C# Agent (Command, Persistence, Info, etc.).
 - [ ] More functionality for the client.
 - [ ] SSL/TLS certificate handling and loading.
+       - Endpoints and handler for uploading SSL/TLS certificates to the server.
 - [ ] Improved C# Agent functionality (persistence, AV bypass and other important features).
 
 
@@ -32,14 +38,24 @@ New Features and Functionality:
 - Diffie-Hellman key exchange to establish a shared 32 byte key for bidirectional AES-256 encrypted communication using Galois/Counter Mode (GCM) for message integrity.
 - Module loading for C# agents.
 - Dependency loading during runtime for C# modules.
+       - Modules are shipped with dependencies and loaded on the agent.
 - DAL logging and error handling improvements.
+       - Standardized logging for DALs.
 - Improved unit testing for server components.
 - Listener AutoStart functionality.
 - Payload service for configuration and compilation of the C# agent.
-- Functional listener login pages.
+       - Payload service for compiling the agent with different parameters.
+- Functional listener and login pages (client).
 - Improved client authentication.
+       - Standardized middleware.
+       - Fixed refresh token functionality.
 - "multiplayer" functionality.
+       - API endpoints for `teams` CRUD operations.
+       - DAL for `teams` DB operations.
+       - `team_handler.go` for managing `teams`.
 - Restructured and cleaned up code structure.
+       - Standardized server return format.
+       - Standardized and parametrized API endpoints.
 
 
 ## **Version 0.2 (MVP Expansion)**
@@ -48,13 +64,15 @@ New Features and Functionality:
 
 - Migrated persistent storage functionality from Redis to use PostgreSQL only.
 - Listener start/stop functionality implementation.
-       - Added `service.go` for listener lifecycle management.
+       - `service.go` for listener lifecycle management.
+       - Environment variables for listener configuration. 
 - Basic unit testing to the server component.
        - Handler unit tests in `/tests/handlers`.
        - Mocks for unit tests in `/tests/mocks`.
 - Basic client functionality.
        - Login page, sidebar and custom components.
 - Revamped XOR Encryption/Decryption util.
+       - Simplified `xor.go` to avoid decorator pattern.
 - Custom logger for the server at `/teamserver/pkg/logger`.
 
 
