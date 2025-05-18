@@ -6,7 +6,8 @@ nav:
         - Installation and Configuration: installation-and-config.md
         - Environment: environment.md
         - Usage: usage.md
-    - Architecture: architecture.md
+    - Components: 
+        - Listeners: listeners.md
     - API:
         - Listener API: listener-api.md
         - Agent API: agent-api.md
