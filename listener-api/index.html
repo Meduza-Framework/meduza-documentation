@@ -9,14 +9,14 @@
       
       
       
-        <link rel="prev" href="../architecture/">
+        <link rel="prev" href="../listeners/">
       
       
         <link rel="next" href="../agent-api/">
       
       
       <link rel="icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -72,6 +72,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -360,18 +365,64 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
+      <a href="../listeners/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Architecture
+    Listeners
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -430,6 +481,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Listener API
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -441,6 +505,152 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-endpoints-client-facing" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI endpoints (Client facing)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UI endpoints (Client facing)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Listener
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-all-listeners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get All Listeners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-listener-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Listener by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-listener-by-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Listener by Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-listener-statuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Listener Statuses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Listener
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Listener
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminate-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminate Listener
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update Listener
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-listener-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Listener Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="External Listener Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-external-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Register External Listener
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -631,6 +841,143 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-endpoints-client-facing" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI endpoints (Client facing)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UI endpoints (Client facing)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Listener
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-all-listeners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get All Listeners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-listener-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Listener by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-listener-by-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Listener by Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-listener-statuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Listener Statuses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Listener
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop Listener
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminate-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminate Listener
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update Listener
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-listener-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Listener Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="External Listener Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#register-external-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Register External Listener
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -647,7 +994,192 @@
 
   <h1>Listener API</h1>
 
-
+<h2 id="overview"><strong>Overview</strong></h2>
+<p>The Listener API in Meduza provides functionality to create, manage, and interact with C2 (Command and Control) infrastructure. This API supports multiple listener types (HTTP, TCP, SMB, and external) and handles their lifecycle.</p>
+<h2 id="ui-endpoints-client-facing"><strong>UI endpoints (Client facing)</strong></h2>
+<p><em>These requests are handled by the frontend. They remain approximately the same for different kinds but the documentation will be using the <code>http</code> listener for demonstration. To perform the requests, the user</em> <strong>must be authenticated</strong> <em>to the teamserver using a JWT token. If the requests are performed using Postman or some other tool (like curl), the user will need to provide an authentication token in the request header as a <code>Bearer</code> token.</em></p>
+<h3 id="create-a-listener"><strong>Create a Listener</strong></h3>
+<p>Creates a new listener configuration.</p>
+<p><strong>Endpoint:</strong> <code>POST /api/v1/listeners</code></p>
+<p><strong>Request Body:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;primary-listener&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Main HTTP listener&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;heartbeat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span>
+<span class="p">}</span>
+</code></pre></div>
+<strong>Successful Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Listener created&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="get-all-listeners"><strong>Get All Listeners</strong></h3>
+<p>Retrieves a list of all configured listeners.</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/listeners</code></p>
+<p><strong>Request Body:</strong></p>
+<p>No body is required to perform the request.</p>
+<p><strong>Successful Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Listeners retrieved successfully&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;f8d7e9a1-c4b6-4a8c-9e2d-3f5c7b9e8a1d&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;running&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;primary-listener&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Main HTTP listener&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;external&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8010</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;heartbeat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="w"> </span><span class="err">ki</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">speci</span><span class="kc">f</span><span class="err">ic</span><span class="w"> </span><span class="err">co</span><span class="kc">nf</span><span class="err">ig</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-12T15:30:45Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-12T15:30:45Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;started_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-12T15:31:05Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;stopped_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="err">...</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="get-listener-by-id"><strong>Get Listener by ID</strong></h3>
+<p>Retrieves a specific listener by ID.</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/listeners/{listener_id}</code></p>
+<p><strong>Request Body:</strong></p>
+<p>No body is required to perform the request.</p>
+<p><strong>Successful Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Listener retrieved successfully&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;f8d7e9a1-c4b6-4a8c-9e2d-3f5c7b9e8a1d&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;running&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;primary-listener&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Main HTTP listener&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;external&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8010</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;heartbeat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">    </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-12T15:30:45Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-12T15:30:45Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;started_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-12T15:31:05Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;stopped_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="get-listener-by-name"><strong>Get Listener by Name</strong></h3>
+<p>Retrieves a specific listener by name.</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/listeners/{listener_name}</code></p>
+<p><strong>Request Body:</strong></p>
+<p>No body is required to perform the request.</p>
+<p><strong>Successful Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Listener retrieved successfully&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;f8d7e9a1-c4b6-4a8c-9e2d-3f5c7b9e8a1d&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;running&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;primary-listener&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Main HTTP listener&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;external&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8010</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;heartbeat&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">    </span><span class="nt">&quot;created_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-12T15:30:45Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;updated_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-12T15:30:45Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;started_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-09-12T15:31:05Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;stopped_at&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="get-listener-statuses"><strong>Get Listener Statuses</strong></h3>
+<p>Retrieves the status of all listeners.</p>
+<p><strong>Endpoint:</strong> <code>GET /api/v1/listeners/statuses</code></p>
+<p><strong>Request Body:</strong></p>
+<p>No body is required to perform the request.</p>
+<p><strong>Successful Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Listeners retrieved successfully&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;f8d7e9a1-c4b6-4a8c-9e2d-3f5c7b9e8a1d&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;running&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ready&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="start-listener"><strong>Start Listener</strong></h3>
+<p>Start a specific listener.</p>
+<p>Endpoint: <code>POST /api/v1/listeners/{listener_id}/start</code></p>
+<p><strong>Request Body</strong>:</p>
+<p>No body is required to perform the request.</p>
+<p><strong>Successful Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Successfully started listener with ID: f8d7e9a1-c4b6-4a8c-9e2d-3f5c7b9e8a1d&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="stop-listener"><strong>Stop Listener</strong></h3>
+<p>Stop a specific listener.</p>
+<p>Endpoint: <code>POST /api/v1/listeners/{listener_id}/stop</code></p>
+<p><strong>Request Body</strong>:</p>
+<p>No body is required to perform the request.</p>
+<p><strong>Successful Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Successfully stopped listener with ID: f8d7e9a1-c4b6-4a8c-9e2d-3f5c7b9e8a1d&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="terminate-listener"><strong>Terminate Listener</strong></h3>
+<p>Terminate and remove a specific listener.</p>
+<p>Endpoint: <code>DELETE /api/v1/listeners/{listener_id}</code></p>
+<p><strong>Request Body</strong>:</p>
+<p>No body is required to perform the request.</p>
+<p><strong>Successful Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Listener deleted successfully&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="update-listener"><strong>Update Listener</strong></h3>
+<p>Update a listener's configuration.</p>
+<p><strong>Endpoint:</strong> <code>PUT /api/v1/listeners/</code></p>
+<p><strong>Request Body:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;f8d7e9a1-c4b6-4a8c-9e2d-3f5c7b9e8a1d&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;primary-listener&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Updated HTTP listener description&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;read_timeout&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;write_timeout&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>Successful Response:</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Successfully updated listener f8d7e9a1-c4b6-4a8c-9e2d-3f5c7b9e8a1d&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h2 id="external-listener-endpoints"><strong>External Listener Endpoints</strong></h2>
+<p><em>External listener endpoints are meant for externally deployed listeners to register and integrate themselves with the teamserver</em></p>
+<h3 id="register-external-listener"><strong>Register External Listener</strong></h3>
+<p>Registers an external listener with the teamserver.</p>
+<p><strong>Endpoint:</strong> <code>POST /external/register</code></p>
+<p><strong>Request Body:</strong></p>
+<p><strong>Successful Response:</strong></p>
+<p>W.I.P.</p>
 
 
 
@@ -696,10 +1228,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

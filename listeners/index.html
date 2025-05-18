@@ -16,15 +16,15 @@
       
       
       <link rel="icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Architecture - Meduza Documentation</title>
+        <title>Listeners - Meduza Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Architecture
+              Listeners
             
           </span>
         </div>
@@ -362,23 +367,137 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Listeners
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Architecture
+    Listeners
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listener-kind" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listener Kind
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listener-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listener States
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -629,6 +748,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listener-kind" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listener Kind
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#listener-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      Listener States
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -643,9 +806,82 @@
 
 
 
-  <h1>Architecture</h1>
+  <h1>Listeners</h1>
 
-
+<h2 id="overview">Overview</h2>
+<p>The Listeners are one of the core components of Meduza. They handle inbound and requests to/from agents. The Listener component is constructed from a several parts for lifecycle management, database operations and external listener management. </p>
+<p>To learn how to operate the listeners, visit the <a href="../listener-api/">Listener API documentation</a></p>
+<h2 id="authentication">Authentication</h2>
+<ul>
+<li>UI Endpoints: Require standard user authentication via JWT token</li>
+<li>External Listener Endpoints: Require listener-specific authentication</li>
+</ul>
+<h2 id="listener-kind">Listener Kind</h2>
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>http</td>
+<td>Default HTTP/HTTPS based listener.</td>
+</tr>
+<tr>
+<td>tcp</td>
+<td>Default TCP based listener.</td>
+</tr>
+<tr>
+<td>smb</td>
+<td>Default SMB protocol based listener (for pivoting).</td>
+</tr>
+<tr>
+<td>external</td>
+<td>External listener. Managed separately but registered with the teamserver. The kind depends on what listener is registered. If a discord listener, kind will be <code>discord</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="listener-states">Listener States</h2>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pending</td>
+<td>No resources created, waiting for signal to start.</td>
+</tr>
+<tr>
+<td>ready</td>
+<td>Idle, waiting for initialization/start.</td>
+</tr>
+<tr>
+<td>starting</td>
+<td>Listener is in the process of starting.</td>
+</tr>
+<tr>
+<td>running</td>
+<td>Listener is active and accepting connections.</td>
+</tr>
+<tr>
+<td>stopping</td>
+<td>Listener is in the process of stopping.</td>
+</tr>
+<tr>
+<td>terminating</td>
+<td>Resources are being cleaned up.</td>
+</tr>
+<tr>
+<td>failed</td>
+<td>Operation failed, requires cleanup and restart.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -694,10 +930,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
